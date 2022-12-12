@@ -72,17 +72,18 @@ button:hover {
     border-radius: 25px;
     }
     
-.titulo {
+.copyright {
+    color: #fff;
+    text-align: center;
+    }
+
+.copyright .titulo {
     width: 100%;
     text-align: center;
     color: aliceblue;
     font-size: 20px;
     }
 
-.copyright {
-    color: #fff;
-    text-align: center;
-    }
 
 
 @media (max-width: 850px) and (max-height: 500px){
