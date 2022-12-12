@@ -1,0 +1,101 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+body {
+    width: 100vm;
+    height: 97vh;
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.348), hsl(0, 0%, 0%)),url(../bg-circuit.svg);
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.275),  hsla(0, 0%, 0%, 0.664)),url(../bg-circuit.svg); 
+    background-position: center center;
+    }
+    
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 734px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    }
+
+.calculadora{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(2px);
+    width: 400px;
+    height: 600px;
+    border-radius: 25px;
+    border: 2px solid rgb(202, 202, 202);
+    }
+
+.calculadora button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(135, 137, 138);
+    color: aliceblue;
+    width:70px;
+    height: 70px;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    }
+
+button:hover {
+    background-color: rgb(161, 164, 167);
+    }
+
+#igual, #reset {
+    background-color: rgb(98, 98, 98);
+    }
+
+#igual:hover, #reset:hover {
+    background-color: rgb(71, 71, 71);
+    }
+
+#resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    background-color:rgb(209, 209, 209);
+    border: 2px solid rgb(0, 0, 0);    
+    border-radius: 25px;
+    }
+
+@media screen and (min-width: 319px) and (max-width: 768px) {
+    .contenedor {
+        height: 97vh;
+        }
+
+    .calculadora {
+        width: 250px;
+        height: 350px;
+        }
+
+    .calculadora button {
+        width: 42px;
+        height: 42px;
+        font-size: 13px;
+        border-radius: 10px;
+        margin: 2px;
+        }
+
+    #resultado{
+        margin-bottom: 10px;
+        font-size: 20px;
+        width: 190px;
+        height: 70px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        }
+    }
